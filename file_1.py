@@ -1,7 +1,10 @@
 # Latihan pertama
 
-x = input("Input: ")
-y = input("Input: ")
+x = int(input("Input: "))
+y = int(input("Input: "))
+
+
+print(f"{x + y}")
 
 def jerry():
     return x * y
