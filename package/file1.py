@@ -1,12 +1,16 @@
 # Di sini kita belajar fungsi
 
 def jerry(func):
-    def qonan(a,b):
-        print("Input:",b)
-        print("======")
-        return func(a,b)
-    return qonan
-
+    def qonan(*a,**b):
+        print("==========")
+        print(f"Input: {a[1]}")
+        print("==========")
+        if func(*a) % 2 :
+            n = func(*a) + 2
+            return n
+        else:
+            return func(*a , **b)
+    return qonan 
 def jr():
     pass
 @jerry
